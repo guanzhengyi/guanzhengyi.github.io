@@ -381,6 +381,50 @@
 			</div>
 			
 
+			<!--舆情 NLP-->
+			<div class="col-md-4 mb-3">
+				<div class="card">
+					<div class="card-body">
+						<span class="text-muted font-weight-bold">2020.02 &mdash; 2021.05</span>
+						<h5>基于BERT-BiGRU的多模集成网络舆情识别</h5>
+						<p class="text-muted small-xl"><b>疫情期间网民情绪识别大赛（CCF&中国中文信息学会联合举办）A榜14/615</b></p>
+						<p class="text-muted small-xl"><b>#NLP #舆情识别 #BERT #多模集成</b></p>
+						<a href="img/bert.png" style="color:#4682B4;"><i><b>负责任务➤</b></i></a></br>
+						设计<b>多模集成网络</b>进行<b>舆情识别</b>：</br>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+									<a data-toggle="collapse" data-parent="#accordion" href="#NLP1">
+									①BERT-BiGRU模型▼
+									</a>
+							</div>
+							<div id="NLP1" class="panel-collapse collapse">
+							<div class="panel-body">
+								·针对微博文本中新词多、口语化等特点，采用BERT预训练模型代替传统的词嵌入层，获得文本的动态词向量表示</br>
+								·通过双向GRU捕捉句子的长距离顺序依赖关系，得到分类结果
+							</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+									<a data-toggle="collapse" data-parent="#accordion" href="#NLP2">
+									②基于Stacking的集成网络舆情模型▼
+									</a>
+							</div>
+							<div id="NLP2" class="panel-collapse collapse">
+							<div class="panel-body">
+								·利用<b>Stacking</b>集成学习的思想构建两层分类器实现情感分类</br>
+								·将<b>BERT-BiGRU与其他基模型</b>共同组成第一层分类</br>
+								·选择合适的预测结果送入到第二层分类器<b>CatBoost</b>充分融合，以优化不平衡数据集带来的预测误差</br>
+							</div>
+							</div>
+						</div>
+							</br><font color="#4682B4"><i><b>项目成果</b></i></font></br>
+						·<a href="res/Using RoBERTa-BiGRU and improved Stacking Ensemble Learning for Sentiment Classification(partial).pdf">Using RoBERTa-BiGRU and improved Stacking Ensemble Learning for Sentiment Classification(导师一作，本人二作；SCI一区FGCS待投，修改中)➤</a>		
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</div>
 </section>
